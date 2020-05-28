@@ -40,14 +40,27 @@ Composerに関しては、動けばいいので、参考記事の方法以外で
 
 ##### 参考記事 
 
-[PHP Composer のインストールと使い方](https://www.webdesignleaves.com/pr/php/php_composer.php)
+[macOS に composer をインストールする](https://qiita.com/tomk79/items/e6e1db94ea8b661b1e86)
 
 ### 手順 3 
 
 1. [本リポジトリ](https://github.com/u-lab/u-lab-laravel-hands-on) をForkする
 2. Forkしたプロジェクトをcloneする
-3. Terminal で `composer install`を入力。
-4. サーバー起動 `php artisan serve` を入力。
-5. ブラウザで `http://localhost:8000` にアクセス。
-6. 画面に `Laravel` と表示されたら終わり。
+
+### 手順 4
+
+1. `.env.example`をコピーして`.env`を作る。
+2. 以下のコマンドを実行
+
+```shell script
+$ composer install # packageをinstallする
+
+$ php artisan key:generate # keyの生成 
+```
+
+### 手順 5
+
+1. サーバー起動 `php artisan serve` を入力。
+2. ブラウザで `http://localhost:8000` にアクセス。
+3. 画面に `Laravel` と表示されたら終わり。
 
